@@ -1,0 +1,269 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+}
+
+html body {
+	padding: 0;
+	margin: 0;
+	background: white;
+}
+
+header {
+	background: fixed url("images/bg-01.jpg") no-repeat;
+	-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+	background-size: 100%;
+}
+
+/* Navigation */
+
+nav {
+	background: rgba(0,0,0, 0.5);
+	height: 100%;
+}
+
+ul {
+	min-height: 40px;
+	max-height: 100px;
+	margin: 0;
+	padding: 2%;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+ul li {
+  	display: inline;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	color: white;
+	padding: 0.35% 2.5%;
+	letter-spacing: 1.5pt;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 5px;
+}
+
+a.logo {
+	position: absolute;
+	display: inline;
+	padding: 0;
+	line-height: 20px;
+	vertical-align: text-top;
+	float: left;
+	margin-top: 2.1%;
+	margin-left: 40px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+nav a.logo:hover {
+	-webkit-transform: scale(1.2);
+    ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+nav li > a:hover {
+	color: black;
+	background: white;
+	font-weight: 400;
+}
+
+a.lang {
+	position: absolute;
+	right: 0;
+	display: inline;
+	text-align: center;
+	vertical-align: text-top;
+	padding: 5px;
+	float: right;
+	margin: 1.6%;
+	margin-left: 40px;
+	letter-spacing: 1.5pt;
+}
+
+nav a.lang:hover {
+	-webkit-transform: scale(1.2);
+    ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: inset 0 0 0 1px white;
+}
+
+button.hamburger {
+	display: none;
+}
+
+/* Main page */
+
+main {
+	margin: 0;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding: 10%;
+	padding-top: 7%;
+}
+
+main h1 {
+	display: inline-block;
+	margin: 5%;
+	padding: 0;
+	letter-spacing: 0.3em;
+	font-weight: 800;
+	font-size: 6rem;
+	font-style: italic;
+}
+
+main p {
+	text-transform: none;
+	font-size: 2em;
+	font-weight: 400;
+	margin: 5%;
+}
+
+/* Portfolio */
+
+#portfolio {
+	margin: 0;
+	padding: 0 0;
+	background: white;
+}
+
+#portfolio img {
+	padding: 0;
+	margin: 0 -2px 0;
+}
+
+#portfolio a {
+	padding: 0;
+}
+
+#portfolio h1 {
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 1.5pt;
+}
+
+.row {
+	background-color: white;
+}
+
+a.works {
+	display: block;
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	margin: 0;
+	border-radius: 0;
+}
+
+div.work {
+	overflow: hidden;
+	display: block;
+}
+
+div.work img {
+	width: 100%;
+	height: 100%;
+}
+
+span.description {
+	min-width: 200px;
+	margin: 10px 0;
+	color: black;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+a.works:hover > span.description:not(.detail) {
+	color: #c09f80;
+}
+
+a.works:hover >	div.work img {
+	transform: scale(1.2);
+}
+
+span.detail {
+	display: block;
+	color: gray;
+	font-size: 10px;
+	margin: 10px 0;	
+}
+
+@media screen and (max-width: 1280px) {
+	main h1 {
+		font-size: 5rem;
+	}
+
+	main p {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	nav li > a {
+		visibility: hidden;
+	}
+
+/*	button.hamburger {
+		float: right;
+		display: inline;
+	}*/
+
+	main h1 {
+		font-size: 4.4rem;
+	}
+
+	main p {
+		font-size: 1.35rem;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	nav {
+		height: 45px;
+	}
+
+	a.logo {
+		margin-top: 15px;
+		margin-left: 20px;
+	}
+
+	a.lang {
+		margin-top: 8px;
+	}
+
+	a.works {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	main h1 {
+		font-size: 2.4rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	main h1 {
+		font-size: 1rem;
+	}
+
+	main p {
+		font-size: 1rem;
+	}
+}
