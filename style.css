@@ -12,10 +12,11 @@ html body {
 
 header {
 	background: fixed url("images/bg-01.jpg") no-repeat;
-	-moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-	background-size: 100%;
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	background-position: center;
 }
 
 /* Navigation */
@@ -105,6 +106,8 @@ button.hamburger {
 /* Main page */
 
 main {
+	position: relative;
+	left: 1%;
 	margin: 0;
 	text-transform: uppercase;
 	color: white;
@@ -114,7 +117,7 @@ main {
 }
 
 main h1 {
-	display: inline-block;
+	display: block;
 	margin: 5%;
 	padding: 0;
 	letter-spacing: 0.3em;
@@ -140,7 +143,7 @@ main p {
 
 #portfolio img {
 	padding: 0;
-	margin: 0 -2px 0;
+	margin: 0 0;
 }
 
 #portfolio a {
@@ -148,10 +151,12 @@ main p {
 }
 
 #portfolio h1 {
-	font-size: 36px;
-	font-weight: 500;
+	margin: 2%;
+	font-size: 2rem;
+	font-weight: 400;
 	text-align: center;
-	letter-spacing: 1.5pt;
+	letter-spacing: 3.5pt;
+	font-style: italic;
 }
 
 .row {
@@ -169,7 +174,6 @@ a.works {
 
 div.work {
 	overflow: hidden;
-	display: block;
 }
 
 div.work img {
@@ -178,10 +182,10 @@ div.work img {
 }
 
 span.description {
+	display: block;
 	min-width: 200px;
 	margin: 10px 0;
 	color: black;
-	display: block;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -260,7 +264,7 @@ span.detail {
 
 @media screen and (max-width: 500px) {
 	main h1 {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
 	main p {
