@@ -10,7 +10,7 @@ html body {
 	background: white;
 }
 
-header {
+header.main {
 	background: fixed url("images/bg-01.jpg") no-repeat;
 	-moz-background-size: cover;
     -webkit-background-size: cover;
@@ -23,6 +23,11 @@ header {
 
 nav {
 	background: rgba(0,0,0, 0.5);
+	height: 100%;
+}
+
+nav:not(.main) {
+	background: rgba(0,0,0, 0.8);
 	height: 100%;
 }
 
@@ -51,6 +56,14 @@ a {
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
     border-radius: 5px;
+}
+
+a.active {
+	color: black;
+	background: white;
+	font-weight: 400;
+	pointer-events: none;
+    cursor: default; 
 }
 
 a.logo {
