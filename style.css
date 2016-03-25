@@ -143,7 +143,7 @@ main {
 
 main h1 {
 	display: block;
-	margin: 10% 5% 5%;
+	margin: 7% 5% 5%;
 	padding: 0;
 	letter-spacing: 0.3em;
 	font-weight: 800;
@@ -161,7 +161,7 @@ main p {
 	text-transform: none;
 	font-size: 3em;
 	font-weight: 400;
-	margin: 10%;
+	margin: 5%;
 }
 
 /* Portfolio */
