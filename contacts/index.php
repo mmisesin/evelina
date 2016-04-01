@@ -30,7 +30,7 @@
 			</nav>
 		</header>
 
-	<form class="cd-form floating-labels">
+	<form action="zakaz.php" class="cd-form floating-labels">
 		<fieldset>
 			<legend>Account Info</legend>
 
@@ -62,7 +62,7 @@
 
 				<p class="cd-select icon">
 					<select class="budget">
-						<option value="0">Select Budget</option>
+						<option value="0" name="budget">Select Budget</option>
 						<option value="1">&lt; $5000</option>
 						<option value="2">$5000 - $10000</option>
 						<option value="3">&gt; $10000</option>
