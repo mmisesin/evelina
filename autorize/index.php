@@ -17,8 +17,6 @@
 			<nav class="main">
 				<a class="logo" href="..\index.html" title="main">MSSN</a>
 				<a class="lang" href="..\indexRus.html">En</a>
-				<a class="sign in" href="../autorize/autorize.php">Log in</a>
-				<a class="sign up" href="../autorize/register.php">Sign up</a>
 <!-- 				<button class="hamburger hamburger--squeeze is-active" type="button">
 					  <span class="hamburger-box">
 					    <span class="hamburger-inner"></span>

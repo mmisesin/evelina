@@ -1,38 +1,37 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Evelina</title>
+		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Poppins:700,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+<!-- 		<link rel="stylesheet" href="imagehover.css"> -->
+		<link href="dist/hamburgers.css" rel="stylesheet">
+	</head>
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Contact Form | CodyHouse</title>
-</head>
-<body>
+	<body class="main">
 		<header class="main">
 			<nav class="main">
-				<a class="logo" href="..\index.html" title="main">MSSN</a>
-				<a class="lang" href="..\indexRus.html">En</a>
-				<a class="sign in" href="../autorize/autorize.php">Log in</a>
-				<a class="sign up" href="../autorize/register.php">Sign up</a>
+				<a class="logo" href="index.html" title="main">MSSN</a>
+				<a class="lang" href="indexRus.html">En</a>
 <!-- 				<button class="hamburger hamburger--squeeze is-active" type="button">
 					  <span class="hamburger-box">
 					    <span class="hamburger-inner"></span>
 					  </span> -->
 				<ul>
-					<!-- <li><a href="about.html">About</a></li> -->
-					<li><a href="..\portfolio\index.html">Portfolio</a></li>
+					<!-- <li><a class="active"href="about">About</a></li> -->
+					<li><a href="portfolio.html">Portfolio</a></li>
 <!-- 					<li><a href="services.html">Services</a></li> -->
-					<li><a class="active" href="contacts/index.html">Contacts</a></li>
-				</ul>	
-			</nav>
-		</header>
+					<li><a href="contacts.php">Contacts</a></li>
+				</ul>
 
-	<form action="zakaz.php" class="cd-form floating-labels">
+			</nav>
+			<section class="about">
+					<form action="zakaz.php" class="cd-form floating-labels">
 		<fieldset>
 			<legend>Account Info</legend>
 
@@ -124,7 +123,7 @@
 		    </div>
 		</fieldset>
 	</form>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
+			</section>
+		</header>
+	</body>
 </html>
